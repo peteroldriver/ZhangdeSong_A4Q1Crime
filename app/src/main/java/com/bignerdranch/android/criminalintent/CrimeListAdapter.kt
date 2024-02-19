@@ -69,7 +69,7 @@ class CrimeListAdapter(
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val crime = crimes[position]
-        if(crime.viewType == 1){
+        if(crime.requiePolice == 1){
             (holder as Layout1CrimeHolder).bind(crime)
         }
         else{
@@ -81,6 +81,6 @@ class CrimeListAdapter(
 
     override fun getItemViewType(position: Int): Int {
         //return super.getItemViewType(position)
-        return crimes.get(position).viewType
+        return crimes.get(position).requiePolice
     }
 }

@@ -16,7 +16,7 @@ class CrimeListViewModel : ViewModel() {
                 title ="Crime #$i",
                 date = Date(),
                 isSolved = i % 2 == 0,
-                viewType = Random.nextInt(1, 3)
+                requiePolice = Random.nextInt(1, 3)
             )
 
             crimes += crime
